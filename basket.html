@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A+</title>
+    
+    <link rel="stylesheet" href="css/style_basket.css">
+      <style>
+            em { display: none; }
+          body { background: url(img/desk.jpg) no-repeat;
+               -moz-background-size: 100%; /* Firefox 3.6+ */
+               -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+               -o-background-size: 100%; /* Opera 9.6+ */
+               background-size: 100%; /* Современные браузеры */}
+         
+        </style>
+  </head>
+    <body>
+        <header class="header">
+            <div class="slide-win"><img src="image/Burger.png"></div>
+            <div class="header__logo logo">
+                <img src="image/photo_2019-10-30_20-50-35.jpg">
+                <a class="need" href="index.html">PITER<p>HIPSTER</p></a>
+            </div>
+            <a href="basket.html" class="basket"><img src="image/shopping109.png"></a>
+        </header>
+        <article class="main">
+            <div class="left-categories" id="left-categories">
+                <nav class="fixed">
+                    <div>
+                        <a href="">Одежда с Петербургом</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Одежда с писателями</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Деревянные значки</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Печатная продукция</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Акции</a>
+                    </div>
+                </nav>
+            </div>
+            
+        </article>
+        <article class="main123">
+            <div class="content">
+                <div class="content__choice1 product_info">
+                    <img src="image/top/_owpGHUhbQY.jpg">
+                    <p id="product_name_1">Свитшот «Кутеж и <br> интриги» с Есениным</p>
+                    <p id="product_size_1">Размер: M</p>
+                    <p class="price" id="product_price_1">2800 ₽</p>
+                    <div class="close_icon"><img src="image/close-icon.png"></div>
+                </div>
+                <div class="content__choice2 product_info">
+                    <img src="image/top/JgRy_iKVtv4.jpg">
+                    <p id="product_name_2">Футболка «With Love»</p>
+                    <p id="product_size_2">Размер: M</p>
+                    <p class="price" id="product_price_2">1190 ₽</p>
+                    <div class="close_icon"><img src="image/close-icon.png"></div>    
+                </div>
+                <!--<div class="content__choice3 product_info"></div>
+                <div class="content__choice4 product_info"></div>
+                <div class="content__choice5 product_info"></div>
+                <div class="content__choice6 product_info"></div>
+                <div class="content__choice7 product_info"></div> -->
+                <hr align="center" width="100%" size="1px" color="black">
+                <div class="content__total">
+                    <div class="content__sum">
+                        <p>Сумма покупки:</p>
+                        <p>3180 ₽</p>
+                    </div>
+                    <div class="content__discount">
+                        <p>Скидка:</p>
+                        <p>0 ₽</p>
+                    </div>
+                    <div class="content__finish">
+                        <p>Итого:</p>
+                        <p>3180 ₽</p>
+                    </div>
+                    <div class="order">
+                        <button>ОФОРМИТЬ ЗАКАЗ</button>
+                    </div>
+                    <a href="indexV2.html" class="back">
+                        <button>ПРОДОЛЖИТЬ ПОКУПКИ</button>
+                    </a>
+                </div>
+            </div>
+        </article>
+            
+            
+        <article class="bottom">
+            <div class="bottom__container">
+                <div class="bottom__logo">
+                    <div class="bottom__tel">
+                        <img src="image/logo%20(1).png">
+                        <span>+79819819111</span>
+                    </div>
+                    
+                    <div class="contact-us">
+                        <div>
+                            <img src="image/2%201.png">
+                            <img class="insta" src="image/insta%201.png">
+                            <img src="image/1%20992.png">
+                        </div>
+                        <button href="#call">Перезвонить мне</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+         <script>
+        const tmp = document.querySelector('.slide-win');
+        tmp.addEventListener('click', function() {
+            console.log('click!!!');
+            const sidebar = document.querySelector('.left-categories');
+            if(sidebar.classList.contains('show')) {
+                sidebar.classList.remove('show');
+            } else {
+                sidebar.classList.add('show');
+            }
+            console.log(sidebar);
+        })
+        console.log('test', tmp);
+      </script>  
+    </body>
+</html>

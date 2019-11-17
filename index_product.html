@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A+</title>
+    
+    <link rel="stylesheet" href="css/style_product.css">
+      <style>
+            em { display: none; }
+          body { background: url(img/desk.jpg) no-repeat;
+               -moz-background-size: 100%; /* Firefox 3.6+ */
+               -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+               -o-background-size: 100%; /* Opera 9.6+ */
+               background-size: 100%; /* Современные браузеры */}
+         
+        </style>
+  </head>
+    <body>
+        <header class="header">
+             <div class="slide-win">
+                 <img src="image/Burger.png">
+            </div>
+            <div class="header__logo logo">
+                <img src="image/photo_2019-10-30_20-50-35.jpg">
+                <a href="index.html">PITER<p>HIPSTER</p></a>
+            </div>
+            <a href="basket.html" class="basket"><img src="image/shopping109.png"></a>
+        </header>
+        <article class="main">
+            <div class="left-categories" id="left-categories">
+                <nav class="fixed">
+                    <div>
+                        <a href="">Одежда с Петербургом</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Одежда с писателями</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Деревянные значки</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Печатная продукция</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Акции</a>
+                    </div>
+                </nav>
+            </div>
+            
+        </article>
+        <div>
+        <article class="product">
+            <div class="product__imgs">
+                <div class="product__main-photo">
+                    <div class="product__slider">
+                        <img class="slider-photo" src="image/tovar1/B2olOmYt3SI.jpg">
+                        <img class="slider-photo" src="image/tovar1/lLgoQpmdbz0.jpg">
+                        <img class="slider-photo" src="image/tovar1/QuEZuojmw-8.jpg">
+                        <img class="slider-photo" src="image/tovar1/VHnBTwoGJjU.jpg">
+                    </div>
+                </div>
+                <div class="product__pointer">
+                </div>
+            </div>
+            <div class="product__description">
+                <div class="product__name">
+                    <p> Свитшот “Санкт-Петербург” </p>
+                    <p>1 990 ₽</p>
+                </div>
+                <div class="product__under-name">
+                    <div class="sizeAndColor">
+                        <div class="sizeAndColor__size">
+                            <span>Размер</span>
+                            <div>
+                                <div>S</div>
+                                <div>M</div>
+                                <div>L</div>
+                            </div>
+                        </div>
+                        <div class="sizeAndColor__color">
+                            <span>Цвет</span>
+                            <div>
+                                <div class="color_1"></div>
+                                <div class="color_2"></div>
+                                <div class="color_3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buyAndPrice">
+                        <button href="#">В КОРЗИНУ</button>
+                    </div>
+                    <div class="product__description-text">
+                        <ul>
+                            <li>сделан из 100% хлопка средней плотности с начесом</li>
+                            <li>мы наносим изображение шелкографией, которая выдерживает до 50-60 стирок при соблюдении рекомендаций по уходу</li>
+                            <li>доставка по России — 300 руб, по миру зависит от удаленности</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="somthLikeThis">
+                <p>Похожие товары</p>
+                <div class="somthLikeThis__overflow">
+                    <div class="somthLikeThis__container">
+                        <img src="image/products_like_this/Rectangle%2064.png">
+                        <img src="image/products_like_this/Rectangle%2065%20(1).png">
+                    </div>
+                </div>
+            </div>
+        </article>
+        </div>
+        <article class="bottom">
+            <div class="bottom__container">
+                <div class="bottom__info">
+                    <ul>
+                        <li><a href="#Brend">О бренде</a></li>
+                        <li><a href="#Info">Инфо</a></li>
+                        <li><a href="#Contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="bottom__logo">
+                    <div class="bottom__tel">
+                        <img src="image/logo%20(1).png">
+                        <span>+79819819111</span>
+                    </div>
+                    
+                    <div class="contact-us">
+                        <div>
+                            <img src="image/2%201.png">
+                            <img class="insta" src="image/insta%201.png">
+                            <img src="image/1%20992.png">
+                        </div>
+                        <button href="#call">Перезвонить мне</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <script>
+        const tmp = document.querySelector('.slide-win');
+        tmp.addEventListener('click', function() {
+            console.log('click!!!');
+            const sidebar = document.querySelector('.left-categories');
+            if(sidebar.classList.contains('show')) {
+                sidebar.classList.remove('show');
+            } else {
+                sidebar.classList.add('show');
+            }
+            console.log(sidebar);
+        })
+        console.log('test', tmp);
+      </script>
+    </body>
+</html>

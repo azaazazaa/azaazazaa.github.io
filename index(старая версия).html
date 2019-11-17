@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A+</title>
+
+    <link rel="stylesheet" href="css/style.css">
+      <style>
+            em { display: none; }
+          body { background: url(img/desk.jpg) no-repeat;
+               -moz-background-size: 100%; /* Firefox 3.6+ */
+               -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+               -o-background-size: 100%; /* Opera 9.6+ */
+               background-size: 100%; /* Современные браузеры */}
+         
+        </style>
+  </head>
+    <body>
+        <header class="header">
+            <div class="slide-win"><img src="image/Burger.png"></div>
+            <div class="header__logo logo"><img src="image/photo_2019-10-30_20-50-35.jpg">
+            <a href="index.html">PITER<p>HIPSTER</p></a>
+            </div>
+            <a class="basket" href="basket.html"><img src="image/shopping109.png"></a>
+        </header>
+        <article class="main">
+            <div class="left-categories" id="left-categories">
+                <nav class="fixed">
+                    <div>
+                        <a href="">Одежда с Петербургом</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Одежда с писателями</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Деревянные значки</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Печатная продукция</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Акции</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="all">
+            <div class="container">
+                <!--------------------->
+                
+		        <!--<input checked type="radio" name="respond" id="desktop">-->
+			        <article id="slider">
+					<!--<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">-->
+                
+				<div id="slides">
+					<div class="overflow">
+						<div class="image">
+							<article class="image__1"><img src="image/98S5Ux7r81c.jpg"></article>
+							<!--<article class="image__2"><img src="image/vOFnKlvP_IM.jpg"></article>
+							<article  class="image__3"><img src="image/oh1EiY9JBJ0.jpg"></article>-->
+							
+						</div>
+					</div>
+				</div>
+				<!--<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					
+                </div>-->
+			</article>
+                
+                <!--------------------->
+               
+                
+                    <article class="main-container-2">
+                        <div class="main__title"><div class="border-bottom"><h2>Топ товаров</h2></div></div>
+                <div class="second-slider slider">
+                    <img src="image/0OeqRKxm780.jpg" class="top-1 top">
+                    <img src="image/ESWtrEoRc9g.jpg" class="top-2 top">
+                </div>
+                <div class="catigories">
+                    <div class="catigories__left">
+                        <div class="catigories__pic1 overflow">
+                            <div class="catigories__matrica">
+                                <img src="image/FDeEv-NX9Oo.jpg">
+                                <img src="image/Cvetaeva.jpg">
+                                <img src="image/JxJx8KT0vCc.jpg">
+                            </div>
+                            
+                            <p class="text-in-image">Броши с писателями</p>
+                        </div>
+                        <div class="catigories__pic2 overflow">
+                            <div class="catigories__matrica_2">
+                                <img src="image/RuiLxS4avI8.jpg">
+                                <img src="image/6RchbpH_tWY.jpg">
+                                <img src="image/023131.jpg">
+                            </div>
+                            
+                            <p class="text-in-image">Одежда с писателями</p>
+                        </div>
+                    </div>
+                    <div class="catigories__right">
+                        <div class="catigories__pic3">
+                            <img src="image/eKBHcMBnmAs.jpg">
+                            <p class="text-in-image">Печатная продукция</p>
+                        </div>
+                    </div>
+                </div>
+                        </article>
+            </div>
+            </div>
+        </article>
+        <article class="bottom">
+            <div class="bottom__container">
+                <div class="bottom__info">
+                    <ul>
+                        <li><a href="#Brend">О бренде</a></li>
+                        <li><a href="#Info">Инфо</a></li>
+                        <li><a href="#Contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="bottom__logo ">
+                    
+                    <div class="bottom__tel">
+                        <img src="image/logo%20(1).png">
+                        <span>+79819819111</span>
+                    </div>
+                    
+                    <div class="contact-us">
+                        <div>
+                            <img src="image/2%201.png">
+                            <img class="insta" src="image/insta%201.png">
+                            <img src="image/1%20992.png">
+                        </div>
+                        <button href="#call">Перезвонить мне</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <script>
+        const tmp = document.querySelector('.slide-win');
+        tmp.addEventListener('click', function() {
+            console.log('click!!!');
+            const sidebar = document.querySelector('.left-categories');
+            if(sidebar.classList.contains('show')) {
+                sidebar.classList.remove('show');
+            } else {
+                sidebar.classList.add('show');
+            }
+            console.log(sidebar);
+        })
+        console.log('test', tmp);
+      </script>  
+    </body>
+</html>

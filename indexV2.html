@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A+</title>
+
+    <link rel="stylesheet" href="css/styleV2.css">
+      <style>
+            em { display: none; }
+          body { background: url(img/desk.jpg) no-repeat;
+               -moz-background-size: 100%; /* Firefox 3.6+ */
+               -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+               -o-background-size: 100%; /* Opera 9.6+ */
+               background-size: 100%; /* Современные браузеры */}
+         
+        </style>
+  </head>
+    <body>
+        <header class="header">
+            <div class="slide-win">
+                <img src="image/Burger.png">
+            </div>
+            <div class="header__logo logo"><img src="image/photo_2019-10-30_20-50-35.jpg">
+            <a href="index.html">PITER<p>HIPSTER</p></a>
+            </div>
+            <a class="basket" href="basket.html"><img src="image/shopping109.png"></a>
+        </header>
+        <article class="main">
+            <div class="left-categories" id="left-categories">
+                <nav class="fixed">
+                    <div>
+                        <a href="">Одежда с Петербургом</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Одежда с писателями</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Деревянные значки</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Печатная продукция</a>
+                        <hr align="centre" width="80" size="2" color="black">
+                        <a href="">Акции</a>
+                    </div>
+                </nav>
+            </div>
+        </article>
+        
+        <div class="all">
+            <div>
+            <article class="all__container-1">
+                <div class="all__main">
+                    <img src="image/I262EilS-oY.jpg">
+                </div>
+            </article>
+            <article class="all__container-2">
+                <div class="all__title-1">
+                    <div class="border-bottom"><h2>Топ товаров</h2></div>
+                
+                <div class="second-slider slider">
+                    <img src="image/top/_owpGHUhbQY.jpg" class="top-1 top">
+                    <img src="image/top/JgRy_iKVtv4.jpg" class="top-2 top">
+                    <!-- <img src="image/top/tQbD-0Hn0Ts.jpg" class="top-3 top">
+                    <img src="image/top/xJ3VEqkWMCw.jpg" class="top-4 top"> -->
+                </div>
+                </div>
+                <div class="catigories">
+                    <h2>Каталог товаров</h2>
+                    <div class="catigories__container">
+                        <a href="index_catalog.html" class="StPet"><img src="image/category/piter.jpg"></a>
+                        <a href="#" class="autors"><img src="image/category/autors.jpg"></a>
+                        <a href="#" class="broshi"><img src="image/category/broshi.jpg"></a>
+                        <a href="#" class="znachki"><img src="image/category/derev.jpg"></a>
+                        <a href="#" class="printed"><img src="image/category/printed.jpg"></a>
+                    </div>
+                </div>
+            </article>
+            </div>
+        </div>
+        
+        
+        <article class="bottom">
+            <div class="bottom__container">
+                <div class="bottom__info">
+                    <ul>
+                        <li><a href="#Brend">О бренде</a></li>
+                        <li><a href="#Info">Инфо</a></li>
+                        <li><a href="#Contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="bottom__logo ">
+                    
+                    <div class="bottom__tel">
+                        <img src="image/logo%20(1).png">
+                        <span>+79819819111</span>
+                    </div>
+                    
+                    <div class="contact-us">
+                        <div>
+                            <img src="image/2%201.png">
+                            <img class="insta" src="image/insta%201.png">
+                            <img src="image/1%20992.png">
+                        </div>
+                        <button href="#call">Перезвонить мне</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <script>
+        const tmp = document.querySelector('.slide-win');
+        tmp.addEventListener('click', function() {
+            console.log('click!!!');
+            const sidebar = document.querySelector('.left-categories');
+            if(sidebar.classList.contains('show')) {
+                sidebar.classList.remove('show');
+            } else {
+                sidebar.classList.add('show');
+            }
+            console.log(sidebar);
+        })
+        console.log('test', tmp);
+      </script>  
+    </body>
+</html>
