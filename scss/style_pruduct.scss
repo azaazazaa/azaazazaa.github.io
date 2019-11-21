@@ -33,7 +33,7 @@ $sqareSize:20px;
         display: block;
         position: absolute;
         top: 70px;
-    height: 100%;
+    height: 300%;
     }
     *{
         padding: 0;
@@ -131,13 +131,19 @@ $sqareSize:20px;
             .product__main-photo{
                 overflow: hidden;
                 width: 100%;
+                height: 100%;
+                position: relative;
                 .product__slider{
-                    width: $firstSliderSize*3;
+                    position: absolute;
+                    left: 0;
                     height: $firstSliderSize;
                     display: flex;
+                    box-sizing: border-box;
                     img{
-                        width: $firstSliderSize;
+                        min-width: $firstSliderSize;
                         height: $firstSliderSize;
+                        box-sizing: border-box;
+                        
                     }
                 }
             }
@@ -379,6 +385,7 @@ $sqareSize:20px;
 
 @media screen and (max-width:400px) and (min-width:330px){
     $firstSliderSize: 320px;
+    $sqareSize: 30px;
     .header {
             a{
             display: flex;
@@ -400,17 +407,33 @@ $sqareSize:20px;
         min-width: $firstSliderSize !important;
     }
     .product__slider{
-                    width: $firstSliderSize*3 !important;
+                    
                     height: $firstSliderSize !important;
                     display: flex;
                     .slider-photo{
-                        width: $firstSliderSize !important;
+                        min-width: $firstSliderSize !important;
                         height: $firstSliderSize !important;
                     }
                 }
     .product__imgs{
             height: $firstSliderSize !important;
     }
+    .sizeAndColor__color{
+                        div{
+                            div{
+                                width: $sqareSize !important;
+                                height: $sqareSize !important;
+                            }
+                    }
+    }
+    .sizeAndColor__size{
+                        div{
+                            div{
+                                width: $sqareSize !important;
+                                height: $sqareSize !important;
+                            }
+                        }
+                    }
 }
 
 @media screen and (max-width:500px) and (min-width:401px) {
@@ -451,10 +474,10 @@ $sqareSize:20px;
         min-width: $firstSliderSize !important;
     }
     .product__slider{
-                    width: $firstSliderSize*3 !important;
+                    
                     height: $firstSliderSize !important;
                     .slider-photo{
-                        width: $firstSliderSize !important;
+                        min-width: $firstSliderSize !important;
                         height: $firstSliderSize !important;
                     }
                 }
@@ -561,10 +584,10 @@ $sqareSize:20px;
         min-width: $firstSliderSize !important;
     }
     .product__slider{
-                    width: $firstSliderSize*3 !important;
+                    
                     height: $firstSliderSize !important;
                     .slider-photo{
-                        width: $firstSliderSize !important;
+                        min-width: $firstSliderSize !important;
                         height: $firstSliderSize !important;
                     }
                 }
@@ -660,11 +683,11 @@ $sqareSize:20px;
                 width: 100%;
                 height: 100%;
                 .product__slider{
-                    width: $firstSliderSize*3;
+                    
                     height: $firstSliderSize;
                     display: flex;
                     img{
-                        width: $firstSliderSize;
+                        min-width: $firstSliderSize;
                         height: $firstSliderSize;
                     }
                 }
@@ -879,11 +902,11 @@ $sqareSize:20px;
                 width: 100%;
                 height: 100%;
                 .product__slider{
-                    width: $firstSliderSize*3;
+                    
                     height: $firstSliderSize;
                     display: flex;
                     img{
-                        width: $firstSliderSize;
+                        min-width: $firstSliderSize;
                         height: $firstSliderSize;
                     }
                 }
