@@ -21,7 +21,8 @@
   display: none;
   justify-content: center;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  z-index: 3; }
 
 .fixed div {
   display: flex;
