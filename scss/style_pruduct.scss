@@ -55,6 +55,7 @@ $sqareSize:20px;
         justify-content: center;
         text-align: center;
         background-color: white;
+        z-index: 3;
     }
     .fixed div{
         display: flex;
@@ -824,7 +825,6 @@ $sqareSize:20px;
         align-items: center;
         background-color: white;
         border-right: 2px darkgrey solid;
-        
     }
     .fixed div{
         display: flex;
