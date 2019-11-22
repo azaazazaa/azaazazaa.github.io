@@ -1,3 +1,9 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Roboto;
+  /* Гарнитура шрифта */
+  src: url(fonts/Roboto.ttf);
+  /* Путь к файлу со шрифтом */ }
 .main .show {
   display: block;
   position: absolute;
@@ -249,7 +255,8 @@ body > div {
       margin-bottom: 10px; }
   .product .somthLikeThis__overflow {
     width: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    overflow: hidden; }
     .product .somthLikeThis__overflow .somthLikeThis__container {
       width: 100%;
       display: flex;
@@ -261,7 +268,7 @@ body > div {
 .bottom {
   min-height: 100%;
   padding-bottom: 5px;
-  background: #F5F5F5; }
+  background: white; }
 
 .bottom__container {
   display: flex;
@@ -306,7 +313,7 @@ body > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 2px solid black; }
+  border-right: 1px solid black; }
   .bottom__tel span {
     font-family: Roboto;
     font-style: normal;
@@ -746,7 +753,7 @@ body > div {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-right: 2px darkgrey solid; }
+    border-right: 1px darkgrey solid; }
 
   .fixed div {
     display: flex;
@@ -990,7 +997,7 @@ body > div {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-right: 2px darkgrey solid; }
+    border-right: 1px darkgrey solid; }
 
   .fixed div {
     display: flex;

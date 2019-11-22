@@ -1,3 +1,9 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Roboto;
+  /* Гарнитура шрифта */
+  src: url(fonts/Roboto.ttf);
+  /* Путь к файлу со шрифтом */ }
 * {
   padding: 0;
   margin: 0; }
@@ -95,12 +101,14 @@
   justify-content: space-around; }
   .all > div .all__main img {
     height: 200px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border: 1px solid black; }
   .all > div .all__title-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden; }
   .all > div .all__container-2 {
     display: flex;
     flex-direction: column;
@@ -119,24 +127,25 @@
     margin-bottom: 10px; }
   .all > div .second-slider {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
+    position: absolute; }
     .all > div .second-slider img {
       height: 200px;
-      margin-bottom: 20px; }
+      border: 1px solid black;
+      margin-right: 25px; }
   .all > div .catigories__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
     .all > div .catigories__container img {
+      border: 1px solid black;
       height: 200px;
       margin-bottom: 20px; }
 
 .bottom {
   min-height: 100%;
   padding-bottom: 5px;
-  background: #F5F5F5; }
+  background: white; }
 
 .bottom__container {
   display: flex;
@@ -181,7 +190,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 2px solid black; }
+  border-right: 1px solid black; }
   .bottom__tel span {
     font-family: Roboto;
     font-style: normal;
