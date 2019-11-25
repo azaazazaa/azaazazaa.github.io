@@ -4,21 +4,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PiterHipster - Свитшот “Санкт-Петербург”</title>
-    
-    <link rel="stylesheet" href="css/style_product.css">
-      
+    <title>PiterHipster - Главная страница</title>
+
+    <link rel="stylesheet" href="css/styleV2.css">
+     
   </head>
     <body>
         <header class="header">
-             <div class="slide-win">
-                 <img src="image/Burger.png">
+            <div class="slide-win">
+                <img src="image/Burger.png">
             </div>
-            <div class="header__logo logo">
-                <img src="image/photo_2019-10-30_20-50-35.jpg">
-                <a href="index.html"><span>PITER</span><span>HIPSTER</span></a>
+            <div class="header__logo logo"><img src="image/photo_2019-10-30_20-50-35.jpg">
+            <a href="index.html"><span>PITER</span><span>HIPSTER</span></a>
             </div>
-            <a href="basket.html" class="basket"><img src="image/shopping109.svg"></a>
+            <a class="basket" href="basket.html"><img src="image/shopping109.svg"></a>
         </header>
         <article class="main">
             <div class="left-categories" id="left-categories">
@@ -39,69 +38,38 @@
                 </nav>
             </div>
         </article>
-        <main>
-        <article class="product">
-            <section class="product__imgs">
-                <div class="product__main-photo">
-                    <div class="product__slider" id="slider" ontouchstart="startSwipe(event)" ontouchmove="moveSwipe(event)" ontouchend="endSwipe(event)">
-                        <img class="slider-photo" id="img" src="image/tovar1/B2olOmYt3SI.jpg">
-                        <img class="slider-photo" src="image/tovar1/lLgoQpmdbz0.jpg">
-                        <img class="slider-photo" src="image/tovar1/QuEZuojmw-8.jpg">
-                        <img class="slider-photo" src="image/tovar1/VHnBTwoGJjU.jpg">
+        
+        <main class="all">
+            <article id="img">
+                <section class="all__container-1">
+                    <div class="all__main">
+                        <img src="image/I262EilS-oY.jpg">
                     </div>
-                </div>
-                <div class="product__pointer">
-                </div>
-            </section>
-            <section class="product__description">
-                <div class="product__name">
-                    <p> Свитшот “Санкт-Петербург” </p>
-                    <p>1 990 Р</p>
-                </div>
-                <div class="product__under-name">
-                    <div class="sizeAndColor">
-                        <div class="sizeAndColor__size">
-                            <span>Размер</span>
-                            <div>
-                                <div>S</div>
-                                <div>M</div>
-                                <div>L</div>
-                                <div>XL</div>
-                                <div>XXL</div>
-                            </div>
-                        </div>
-                        <div class="sizeAndColor__color">
-                            <span>Цвет</span>
-                            <div>
-                                <div class="color_1"></div>
-                                <div class="color_2"></div>
-                                <div class="color_3"></div>
-                            </div>
+                </section>
+                <section class="all__container-2">
+                <div class="border-bottom"><h2>Топ товаров</h2></div>
+                    <div class="all__title-1">
+                        <div class="second-slider slider" id="slider" ontouchstart="startSwipe(event)" ontouchmove="moveSwipe(event)" ontouchend="endSwipe(event)">
+                            <img src="image/top/_owpGHUhbQY.jpg" class="top-1 top">
+                            <img src="image/top/JgRy_iKVtv4.jpg" class="top-2 top">
+                            <img src="image/top/tQbD-0Hn0Ts.jpg" class="top-3 top">
+                            <img src="image/top/xJ3VEqkWMCw.jpg" class="top-4 top"> 
                         </div>
                     </div>
-                    <div class="buyAndPrice">
-                        <button href="#">В КОРЗИНУ</button>
+                    <div class="catigories">
+                        <h2>Каталог товаров</h2>
+                        <div class="catigories__container">
+                            <a href="index_catalog.html" class="StPet"><img src="image/category/piter.jpg"></a>
+                            <a href="#" class="autors"><img src="image/category/autors.jpg"></a>
+                            <a href="#" class="broshi"><img src="image/category/broshi.jpg"></a>
+                            <a href="#" class="znachki"><img src="image/category/derev.jpg"></a>
+                            <a href="#" class="printed"><img src="image/category/printed.jpg"></a>
+                        </div>
                     </div>
-                    <div class="product__description-text">
-                        <ul>
-                            <li>сделан из 100% хлопка средней плотности с начесом</li>
-                            <li>мы наносим изображение шелкографией, которая выдерживает до 50-60 стирок при соблюдении рекомендаций по уходу</li>
-                            <li>доставка по России — 300 руб, по миру зависит от удаленности</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="somthLikeThis">
-                <p>Похожие товары</p>
-                <div class="somthLikeThis__overflow">
-                    <div class="somthLikeThis__container">
-                        <img src="image/products_like_this/Rectangle%2064.png">
-                        <img src="image/products_like_this/Rectangle%2065%20(1).png">
-                    </div>
-                </div>
-            </section>
-        </article>
+                </section>
+            </article>
         </main>
+
         <footer class="bottom">
             <div class="bottom__container">
                 <div class="bottom__info">
@@ -111,7 +79,8 @@
                         <li><a href="#Contacts">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="bottom__logo">
+                <div class="bottom__logo ">
+                    
                     <div class="bottom__tel">
                         <img src="image/logo%20(1).png">
                         <a href="tel:+1234567890">+79819819111</a>
@@ -128,7 +97,7 @@
                 </div>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script src="js/script.js"></script>  
         <script>
             var slider = document.getElementById('slider');
             var startingX;
@@ -149,15 +118,16 @@
             };
             function endSwipe(evt){ 
                 var change = startingX - evt.changedTouches[0].clientX + left;
-                var width = document.getElementById('img').offsetWidth;
+                var width =document.getElementById('img').offsetWidth;
                console.log(change);
+                
                 if (((change < width/3)&&(change > 0))||(( -change < width/3)&&(change < 0))) {
                     slider.style.left = left + 'px';
                     slider.style.transition = 'all .1s';
                 }
                 else{
                     
-                    if ((change > 0)&&(-left < 841)){
+                    if ((change > 0)&&(-left != width)){
                         slider.style.transition = 'all .3s';
                         slider.style.left = '-' + (- left + width) + 'px';
                         console.log(width);
