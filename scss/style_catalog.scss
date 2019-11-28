@@ -28,7 +28,10 @@ $sizeSmallsPic:10px;///!!!!
     font-family: Robotobold; /* Гарнитура шрифта */
     src: url(../fonts/Robotobold.ttf); /* Путь к файлу со шрифтом */
    }
-
+@font-face {
+    font-family: Robotolight; /* Гарнитура шрифта */
+    src: url(../fonts/Robotolight.ttf); /* Путь к файлу со шрифтом */
+   }
 @mixin font($size,$weight,$height,$color: #000000){
         font-family: $fontStyle;
         font-style: normal;
@@ -75,7 +78,13 @@ article > h1{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
-        @include font(24px,normal,28px);
+        font-family: Robotolight;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
         width: 100%;
     }
 .merch{
@@ -157,7 +166,13 @@ article > h1{
 }
 @media screen and (min-width:501px) and (max-width: 954px){
     article > .name{
-        font-size: 25px;
+        font-family: Robotolight;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 30px;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
     }
     .main .show{
         display: block;
@@ -204,7 +219,13 @@ article > h1{
 }
 @media screen and (max-width:500px) and (min-width:401px) {
     article > .name{
-        @include font(22px,normal,26px);
+        font-family: Robotolight;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 26px;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
     }
     .main .show{
         display: block;
@@ -256,7 +277,13 @@ article > h1{
 }
 @media screen and (max-width:400px) and (min-width:330px){
     article > .name{
-        @include font(18px,normal,21px);
+        font-family: Robotolight;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 20px;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
     }
     
     .main .show{
@@ -308,7 +335,13 @@ article > h1{
 }
 @media screen and (max-width:329px) and (min-width:240px){
     article > h1{
-        @include font(18px,normal,21px);
+            font-family: Robotolight;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 20px;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center;
     }
     .header {
             a{
@@ -357,8 +390,8 @@ article > h1{
     }
     .fixed div{
         a{
-            margin-bottom: $hight-left-catigory + 5px;
-            margin-top: $hight-left-catigory + 5px;
+            margin-bottom: $hight-left-catigory;
+            margin-top: $hight-left-catigory;
         }
     }
 }

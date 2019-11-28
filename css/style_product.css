@@ -379,8 +379,8 @@ main {
         margin: 0 10px; }
 
 .fixed div a {
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
 
 @media screen and (max-width: 400px) and (min-width: 330px) {
   .header a {

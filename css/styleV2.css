@@ -9,6 +9,11 @@
   /* Гарнитура шрифта */
   src: url(../fonts/Robotobold.ttf);
   /* Путь к файлу со шрифтом */ }
+@font-face {
+  font-family: Robotolight;
+  /* Гарнитура шрифта */
+  src: url(../fonts/Robotolight.ttf);
+  /* Путь к файлу со шрифтом */ }
 .header {
   box-sizing: border-box;
   border-bottom: 1px darkgrey solid;
@@ -230,17 +235,16 @@
     flex-direction: column;
     justify-content: space-around; }
   .all > article h2 {
-    font-family: Roboto;
+    font-family: Robotolight;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
     font-style: normal;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 35px;
-    text-align: center;
-    color: black;
+    text-transform: uppercase;
     display: flex;
     white-space: nowrap;
     justify-content: center;
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .all > article .second-slider {
     display: flex;
     position: absolute;
@@ -260,12 +264,23 @@
       margin-bottom: 20px; }
 
 .fixed div a {
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
 
 @media screen and (max-width: 400px) and (min-width: 330px) {
   .header a {
     font-size: 20px; }
+
+  .all > article .catigories__container img {
+    margin-bottom: 25px; }
+
+  .all > article h2 {
+    margin-bottom: 25px; }
+
+  .all > article .all__main img {
+    margin-bottom: 25px; }
+  .all > article .all__title-1 {
+    margin-bottom: 25px; }
 
   .all > article {
     width: 320px; }
@@ -291,6 +306,17 @@
   .header a {
     font-size: 25px; }
 
+  .all > article .catigories__container img {
+    margin-bottom: 35px; }
+
+  .all > article h2 {
+    margin-bottom: 35px; }
+
+  .all > article .all__main img {
+    margin-bottom: 35px; }
+  .all > article .all__title-1 {
+    margin-bottom: 35px; }
+
   .all > article {
     width: 380px; }
 
@@ -314,6 +340,17 @@
 @media screen and (max-width: 800px) and (min-width: 501px) {
   .header a {
     font-size: 36px; }
+
+  .all > article .catigories__container img {
+    margin-bottom: 35px; }
+
+  .all > article h2 {
+    margin-bottom: 35px; }
+
+  .all > article .all__main img {
+    margin-bottom: 35px; }
+  .all > article .all__title-1 {
+    margin-bottom: 35px; }
 
   .all > article {
     width: 480px; }

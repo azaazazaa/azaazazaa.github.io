@@ -25,6 +25,10 @@ $sizeSmallsPic:10px;///!!!!
     font-family: Robotobold; /* Гарнитура шрифта */
     src: url(../fonts/Robotobold.ttf); /* Путь к файлу со шрифтом */
    }
+@font-face {
+    font-family: Robotolight; /* Гарнитура шрифта */
+    src: url(../fonts/Robotolight.ttf); /* Путь к файлу со шрифтом */
+   }
 @mixin font($size,$weight,$height,$color: #000000){
         font-family: $fontStyle;
         font-style: normal;
@@ -79,11 +83,16 @@ $sizeSmallsPic:10px;///!!!!
         justify-content: space-around;
     }
     h2{
-            @include font(30px, 500, 35px,black);
+            font-family: Robotolight;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 20px;
+            font-style: normal;
+            text-transform: uppercase;
             display: flex;
             white-space: nowrap;
             justify-content: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
     }
     .second-slider {
         display: flex;
@@ -110,8 +119,8 @@ $sizeSmallsPic:10px;///!!!!
 //-----------------------------------------
 .fixed div{
         a{
-            margin-bottom: $hight-left-catigory + 5px;
-            margin-top: $hight-left-catigory + 5px;
+            margin-bottom: $hight-left-catigory;
+            margin-top: $hight-left-catigory;
         }
     }
 @media screen and (max-width:400px) and (min-width:330px){
@@ -120,6 +129,22 @@ $sizeSmallsPic:10px;///!!!!
             a{
             font-size: 20px;
         }
+    }
+    .all > article .catigories__container {
+        img{
+            margin-bottom: 25px;
+        }
+    }
+    .all > article h2{
+        margin-bottom: 25px;
+    }
+    .all > article{
+    .all__main img{
+        margin-bottom: 25px;
+    }
+    .all__title-1{
+        margin-bottom: 25px;
+    }
     }
     .all > article{
     width: $firstSliderSize;
@@ -153,6 +178,22 @@ $sizeSmallsPic:10px;///!!!!
             a{
             font-size: 25px;
         }
+    }
+    .all > article .catigories__container {
+        img{
+            margin-bottom: 35px;
+        }
+    }
+    .all > article h2{
+        margin-bottom: 35px;
+    }
+    .all > article{
+    .all__main img{
+        margin-bottom: 35px;
+    }
+    .all__title-1{
+        margin-bottom: 35px;
+    }
     }
     $firstSliderSize: 380px;
     .all > article{
@@ -189,6 +230,22 @@ $sizeSmallsPic:10px;///!!!!
             a{
             font-size: 36px;
         }
+    }
+    .all > article .catigories__container {
+        img{
+            margin-bottom: 35px;
+        }
+    }
+    .all > article h2{
+        margin-bottom: 35px;
+    }
+    .all > article{
+    .all__main img{
+        margin-bottom: 35px;
+    }
+    .all__title-1{
+        margin-bottom: 35px;
+    }
     }
     $firstSliderSize: 480px;
     .all > article{

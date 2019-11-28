@@ -9,6 +9,11 @@
   /* Гарнитура шрифта */
   src: url(../fonts/Robotobold.ttf);
   /* Путь к файлу со шрифтом */ }
+@font-face {
+  font-family: Robotolight;
+  /* Гарнитура шрифта */
+  src: url(../fonts/Robotolight.ttf);
+  /* Путь к файлу со шрифтом */ }
 * {
   padding: 0;
   margin: 0; }
@@ -222,13 +227,13 @@ article > h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  font-family: Roboto;
+  font-family: Robotolight;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
   font-style: normal;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 28px;
+  text-transform: uppercase;
   text-align: center;
-  color: #000000;
   width: 100%; }
 
 .merch {
@@ -304,7 +309,13 @@ article > h1 {
     font-size: 36px; } }
 @media screen and (min-width: 501px) and (max-width: 954px) {
   article > .name {
-    font-size: 25px; }
+    font-family: Robotolight;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center; }
 
   .main .show {
     display: block;
@@ -344,13 +355,13 @@ article > h1 {
     margin-top: 35px; } }
 @media screen and (max-width: 500px) and (min-width: 401px) {
   article > .name {
-    font-family: Roboto;
-    font-style: normal;
+    font-family: Robotolight;
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 300;
     line-height: 26px;
-    text-align: center;
-    color: #000000; }
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center; }
 
   .main .show {
     display: block;
@@ -395,13 +406,13 @@ article > h1 {
     margin-top: 35px; } }
 @media screen and (max-width: 400px) and (min-width: 330px) {
   article > .name {
-    font-family: Roboto;
-    font-style: normal;
+    font-family: Robotolight;
     font-size: 18px;
-    font-weight: normal;
-    line-height: 21px;
-    text-align: center;
-    color: #000000; }
+    font-weight: 300;
+    line-height: 20px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center; }
 
   .main .show {
     display: block;
@@ -446,13 +457,13 @@ article > h1 {
     font-size: 20px; } }
 @media screen and (max-width: 329px) and (min-width: 240px) {
   article > h1 {
-    font-family: Roboto;
-    font-style: normal;
+    font-family: Robotolight;
     font-size: 18px;
-    font-weight: normal;
-    line-height: 21px;
-    text-align: center;
-    color: #000000; }
+    font-weight: 300;
+    line-height: 20px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center; }
 
   .header a {
     font-size: 18px; }
@@ -497,5 +508,5 @@ article > h1 {
     margin-right: 15px; }
 
   .fixed div a {
-    margin-bottom: 20px;
-    margin-top: 20px; } }
+    margin-bottom: 15px;
+    margin-top: 15px; } }
