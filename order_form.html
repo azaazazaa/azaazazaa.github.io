@@ -4,19 +4,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PiterHipster - одежда с петербургом</title>
-    
-    <link rel="stylesheet" href="css/style_catalog.css">
-      
+    <title>PiterHipster - Форма заказа</title>
+
+    <link rel="stylesheet" href="css/style_order.css">
+     
   </head>
     <body>
         <header class="header">
-            <div class="slide-win"><img src="image/Burger.png"></div>
-            <div class="header__logo logo">
-                <img src="image/photo_2019-10-30_20-50-35.jpg">
-                <a href="index.html"><span>PITER</span><span>HIPSTER</span></a>
+            <div class="slide-win">
+                <img src="image/Burger.png">
             </div>
-            <a href="basket.html" class="basket"><img src="image/shopping109.png"></a>
+            <div class="header__logo logo"><img src="image/photo_2019-10-30_20-50-35.jpg">
+            <a href="index.html"><span>PITER</span><span>HIPSTER</span></a>
+            </div>
+            <a class="basket" href="basket.html"><img src="image/shopping109.png"></a>
         </header>
         <article class="main">
             <div class="left-categories" id="left-categories">
@@ -38,43 +39,51 @@
             </div>
         </article>
         
-        <main class="main123"> 
-            <article class="products">
-                <h1 class="name">ОДЕЖДА С ПЕТЕРБУРГОМ</h1>
-                <section class="products__merch1 merch">
-                    <img src="image/with_St.Petersburg/98S5Ux7r81c.jpg">
-                    <div class="name_prod1 name_prod">
-                        <p>футболка «With Love»</p>
-                        <p><strong>1 190 Р</strong></p>
+        <main>
+            <article>
+                <section class="form">
+                    <h2>ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+                    <form action="#" method="post">
+                        <label>Имя и фамилия<input type="text" name="name" id="secondName"></label>
+                        <label>Телефон<input type="text" name="tel" id="telephon"></label>
+                        <label>E-mail<input type="text" name="E-mail" id="E-mail"></label>
+                        <label>Страна<input type="text" name="country" id="country"></label>
+                        <label>Город<input type="text" name="city" id="city"></label>
+                        <label>Комментарий к заказу<input class="comment" type="text" name="comment" id="comment"></label>
+                        <input class="style-btn1" type="submit" value="ПОДТВЕРДИТЬ ЗАКАЗ">
+                    </form>
+                </section>
+                <section class="my_choise">
+                    <div><p>ВАШ ЗАКАЗ</p></div>
+                    <div class="content__choice1 product_info">
+                        <img src="image/top/xJ3VEqkWMCw.jpg">
+                        <div class="content__p">
+                            <p id="product_name_1">Свитшот «Кутеж и интриги» с Есениным<span>, черный</span></p>
+                            <p class="roboto" id="product_size_1">Размер: M</p>
+                            <p class="price" id="product_price_1"><strong>2800 Р</strong></p>
+                        </div>
+                    </div>
+                    <div class="content__choice2 product_info">
+                        <img src="image/top/JgRy_iKVtv4.jpg">
+                        <div class="content__p">
+                            <p id="product_name_2">Футболка «With Love»<span>, черный</span></p>
+                            <p class="roboto" id="product_size_2">Размер: M</p>
+                            <p class="price" id="product_price_2"><strong>1190 Р</strong></p>
+                        </div>
                     </div>
                 </section>
-                <section class="products__merch2 merch">
-                    <a href="index_product.html">
-                    <img src="image/with_St.Petersburg/lLgoQpmdbz0.jpg">
-                    <div class="name_prod2 name_prod">
-                        <p>свитшот «Санкт-Петербург</p>
-                        <p><strong>1 990 Р</strong></p>
+                <section class="content__total">
+                    <div class="content__finish">
+                        <p><strong>Итого:</strong></p>
+                        <p><strong>3180 Р</strong></p>
                     </div>
-                        </a>
-                </section>
-                <section class="products__merch3 merch">
-                    <img src="image/with_St.Petersburg/oh1EiY9JBJ0.jpg">
-                    <div class="name_prod3 name_prod">
-                        <p>футболка «Санкт-Петербург»</p>
-                        <p><strong>1 190 Р</strong></p>
-                    </div>
-                </section>
-                <section class="products__merch4 merch">
-                    <img src="image/with_St.Petersburg/vOFnKlvP_IM.jpg">
-                    <div class="name_prod4 name_prod">
-                        <p>свитшот «With Love»</p>
-                        <p><strong>1 990 Р</strong></p>
-                    </div>
+                    <a href="basket.html" class="back">
+                        <div><strong>РЕДАКТИРОВАТЬ ЗАКАЗ</strong></div>
+                    </a>
                 </section>
             </article>
         </main>
-            
-            
+
         <footer class="bottom">
             <div class="feedback feedbackall"></div>
             <section class="feedback__form feedbackall">
@@ -94,7 +103,8 @@
                         <li><a href="#Contacts">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="bottom__logo">
+                <div class="bottom__logo ">
+                    
                     <div class="bottom__tel">
                         <img src="image/logo%20(1).png">
                         <a href="tel:+79502535013">+7 950 253 50 13</a>
@@ -111,6 +121,6 @@
                 </div>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script src="js/script.js"></script>  
     </body>
 </html>

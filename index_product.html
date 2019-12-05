@@ -18,7 +18,7 @@
                 <img src="image/photo_2019-10-30_20-50-35.jpg">
                 <a href="index.html"><span>PITER</span><span>HIPSTER</span></a>
             </div>
-            <a href="basket.html" class="basket"><img src="image/shopping109.svg"></a>
+            <a href="basket.html" class="basket"><img src="image/shopping109.png"></a>
         </header>
         <article class="main">
             <div class="left-categories" id="left-categories">
@@ -40,8 +40,7 @@
             </div>
         </article>
         <main>
-        <article class="product">
-            <section class="product__imgs">
+            <article class="product__imgs">
                 <div class="product__main-photo">
                     <div class="product__slider" id="slider" ontouchstart="startSwipe(event)" ontouchmove="moveSwipe(event)" ontouchend="endSwipe(event)">
                         <img class="slider-photo" id="img" src="image/tovar1/B2olOmYt3SI.jpg">
@@ -52,7 +51,8 @@
                 </div>
                 <div class="product__pointer">
                 </div>
-            </section>
+            </article>
+        <article class="product">
             <section class="product__description">
                 <div class="product__name">
                     <p> Свитшот “Санкт-Петербург” </p>
@@ -61,7 +61,7 @@
                 <div class="product__under-name">
                     <div class="sizeAndColor">
                         <div class="sizeAndColor__size">
-                            <span>Размер</span>
+                            <p>Размер <span>Таблица размеров</span></p>
                             <div>
                                 <div>S</div>
                                 <div>M</div>
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="sizeAndColor__color">
-                            <span>Цвет</span>
+                            <p>Цвет</p>
                             <div>
                                 <div class="color_1"></div>
                                 <div class="color_2"></div>
@@ -103,6 +103,16 @@
         </article>
         </main>
         <footer class="bottom">
+            <div class="feedback feedbackall"></div>
+            <section class="feedback__form feedbackall">
+                <h2>ОБРАТНЫЙ ЗВОНОК</h2>
+                <img class="close" src="image/close-icon.png">
+                <form action="#" method="post">
+                    <label>КАК ВАС ЗОВУТ?<input type="text" name="name" id="name"></label>
+                    <label>ВАШ ТЕЛЕФОН<input type="text" name="tel" id="tel"></label>
+                    <input class="style-btn1" type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
+                </form>
+            </section>
             <div class="bottom__container">
                 <div class="bottom__info">
                     <ul>
@@ -114,7 +124,7 @@
                 <div class="bottom__logo">
                     <div class="bottom__tel">
                         <img src="image/logo%20(1).png">
-                        <a href="tel:+1234567890">+79819819111</a>
+                        <a href="tel:+79502535013">+7 950 253 50 13</a>
                     </div>
                     
                     <div class="contact-us">
@@ -123,7 +133,7 @@
                             <img class="insta" src="image/insta%201.png">
                             <img src="image/1%20992.png">
                         </div>
-                        <button href="#call">Перезвоните мне</button>
+                        <button class="java" href="#call">Перезвоните мне</button>
                     </div>
                 </div>
             </div>

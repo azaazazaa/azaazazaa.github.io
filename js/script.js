@@ -15,4 +15,27 @@ const tmp = document.querySelector('.slide-win');
             }
             console.log(sidebar);
         })
-        console.log('test', tmp);
+
+const tmp2 = document.querySelector('.java');
+const closeFeedBack = document.querySelector('.close');
+        tmp2.addEventListener('click', function() {
+            console.log('click!!!');
+            const sidebar2 = document.querySelector('.feedbackall');
+            const sidebar3 = document.querySelector('.feedback__form');
+            if(sidebar2.classList.contains('showz')) {
+                sidebar2.classList.remove('showz');
+                sidebar3.classList.remove('showz');
+            } else {
+                sidebar2.classList.add('showz');
+                sidebar3.classList.add('showz');
+            }
+            console.log(sidebar2);
+        })
+
+        closeFeedBack.addEventListener('click', function() {
+            console.log('click123!!!');
+            const sidebar2 = document.querySelector('.feedbackall');
+            const sidebar3 = document.querySelector('.feedback__form');
+            sidebar2.classList.remove('showz');
+            sidebar3.classList.remove('showz');
+        })

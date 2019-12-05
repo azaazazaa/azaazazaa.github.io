@@ -29,6 +29,10 @@ $sizeButtonFinish: 180px;
     font-family: Robotobold; /* Гарнитура шрифта */
     src: url(../fonts/Robotobold.ttf); /* Путь к файлу со шрифтом */
    }
+@font-face {
+    font-family: Robotomedium; /* Гарнитура шрифта */
+    src: url(../fonts/Robotomedium.ttf); /* Путь к файлу со шрифтом */
+   }
 @mixin font($size,$weight,$height,$color: #000000){
         font-family: $fontStyle;
         font-style: normal;
@@ -132,12 +136,13 @@ $sizeButtonFinish: 180px;
             width: 100%;
             display: flex;
             justify-content: flex-end;
-            button{
+            a{
                 display: flex;
-                padding: 5px 20px;
+                
                 background: black;
                 border: none;
                 justify-content: center;
+                align-items: center;
                 text-decoration: none;
                 width: $sizeButtonFinish;
                 height: $sizeButtonFinish / 4;
@@ -150,13 +155,14 @@ $sizeButtonFinish: 180px;
             display: flex;
             justify-content: flex-end;
             text-decoration: none;
-            button{
+            div{
                 display: flex;
-                padding: 5px 20px;
+                
                 background: white;
                 justify-content: center;
+                align-items: center;
                 text-decoration: none;
-                border: 2px solid black;
+                border: 1px solid black;
                 width: $sizeButtonFinish;
                 height: $sizeButtonFinish / 4;
                 @include font(14px,500,16px, black);
@@ -175,13 +181,16 @@ $sizeButtonFinish: 180px;
         justify-content: space-around;
         align-items: center;
         p{
-            font-family: Roboto;
+            font-family: Robotomedium;
             font-style: normal;
             font-weight: normal;
             font-size: 20px;
             line-height: 23px;
             max-width: 250px;
             text-transform: uppercase;
+        }
+        .roboto{
+            font-family: Roboto;
         }
         span{
             text-transform: lowercase;
@@ -304,14 +313,14 @@ $sizeButtonFinish: 180px;
         }
         .order{
             justify-content: center !important;
-            button{
+            a{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, white);
             }
         }
         .back{
             justify-content: center !important;
-            button{
+            div{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, black);
             }
@@ -393,14 +402,14 @@ $sizeButtonFinish: 180px;
         }
         .order{
             justify-content: center !important;
-            button{
+            a{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, white);
             }
         }
         .back{
             justify-content: center !important;
-            button{
+            div{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, black);
             }
@@ -488,14 +497,14 @@ $sizeButtonFinish: 180px;
         }
         .order{
             justify-content: center !important;
-            button{
+            a{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, white);
             }
         }
         .back{
             justify-content: center !important;
-            button{
+            div{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, black);
             }
@@ -582,14 +591,14 @@ $sizeButtonFinish: 180px;
         }
         .order{
             justify-content: center !important;
-            button{
+            a{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, white);
             }
         }
         .back{
             justify-content: center !important;
-            button{
+            div{
                 width: $sizeButtonFinish !important;
                 @include font(14px,500,16px, black);
             }

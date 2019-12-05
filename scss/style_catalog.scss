@@ -32,6 +32,7 @@ $sizeSmallsPic:10px;///!!!!
     font-family: Robotolight; /* Гарнитура шрифта */
     src: url(../fonts/Robotolight.ttf); /* Путь к файлу со шрифтом */
    }
+
 @mixin font($size,$weight,$height,$color: #000000){
         font-family: $fontStyle;
         font-style: normal;
