@@ -20,7 +20,21 @@ $bottom-logo-height: 25px;//!!
 $bottom-logo-width: 120px;//!!
 $sizeSmallsPic: 20px;///!!!!
 $sizeButtonFinish: 180px;
-
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 @font-face {
     font-family: Roboto; /* Гарнитура шрифта */
     src: url(../fonts/Roboto.ttf); /* Путь к файлу со шрифтом */
@@ -148,6 +162,7 @@ article{
             color: white;
             margin-top: 10px;
             margin-bottom: 30px;
+            letter-spacing: 1px;
             }
 }
 .my_choise>div>p{
@@ -216,7 +231,6 @@ my_choise{
             text-decoration: none;
             div{
                 display: flex;
-                
                 background: white;
                 justify-content: center;
                 align-items: center;
@@ -238,6 +252,14 @@ my_choise{
             line-height: 18px;
         }
     }
+    .header .header__logo{
+        margin-right: -210px;
+    }
+.finderAndBascet{
+    form{
+        display: flex;
+    }
+}
 }
 
 @media screen and (min-width:501px) and (max-width: 800px){
@@ -478,8 +500,8 @@ my_choise{
                 font-family: Robotomedium;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 11px;
-                line-height: 13px;
+                font-size: 10px;
+                line-height: 12px;
                 width: 100%;
                 text-transform: uppercase;
                 text-align: left;
@@ -491,7 +513,12 @@ my_choise{
                 text-transform: lowercase;
             }
         }   
-    }   
+    } 
+    .content__total .content__finish{
+        p{
+            @include font(14px,500,16px);
+        }
+    }
 }
 @media screen and (min-width: 250px) and (max-width: 329px){
     $leftCategoryBlock: 225px;

@@ -1,4 +1,35 @@
 @charset "UTF-8";
+::-webkit-input-placeholder {
+  text-align: center; }
+
+:-moz-placeholder {
+  text-align: center; }
+
+::-moz-placeholder {
+  text-align: center; }
+
+:-ms-input-placeholder {
+  text-align: center; }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
 @font-face {
   font-family: Roboto;
   /* Гарнитура шрифта */
@@ -43,12 +74,31 @@
   height: 30px;
   width: 30px;
   box-sizing: border-box;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 20px; }
 
 .header__logo {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.finderAndBascet {
+  display: flex; }
+  .finderAndBascet form {
+    flex-direction: row;
+    display: none; }
+  .finderAndBascet form > input {
+    display: flex;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px;
+    height: 30px;
+    text-decoration: none; }
+  .finderAndBascet form .style-btn {
+    background-image: url(../image/finder.png);
+    height: 30px;
+    width: 30px;
+    border: none; }
 
 .feedback {
   position: fixed;
@@ -255,9 +305,9 @@ form {
   .fixed div a {
     font-family: Roboto;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: auto;
-    line-height: 19px;
+    line-height: 21px;
     text-align: center;
     color: #000000;
     text-decoration: none;
@@ -288,6 +338,12 @@ form {
 
 .header a {
   font-size: 36px; }
+
+.header .header__logo {
+  margin-right: -210px; }
+
+.finderAndBascet form {
+  display: flex; }
 
 .left-categories {
   position: fixed;
@@ -344,9 +400,9 @@ form {
     .content .content__total p {
       font-family: Roboto;
       font-style: normal;
-      font-size: 18px;
+      font-size: 12px;
       font-weight: 500;
-      line-height: 21px;
+      line-height: 14px;
       text-align: center;
       color: #000000; }
     .content .content__total .content__sum {
@@ -365,9 +421,9 @@ form {
       .content .content__total .content__finish p {
         font-family: Roboto;
         font-style: normal;
-        font-size: 24px;
+        font-size: 14px;
         font-weight: 500;
-        line-height: 28px;
+        line-height: 16px;
         text-align: center;
         color: #000000; }
     .content .content__total .order {
@@ -382,12 +438,12 @@ form {
         align-items: center;
         text-decoration: none;
         width: 180px;
-        height: 45px;
+        height: 25.7142857143px;
         font-family: Roboto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
         color: white;
         margin-bottom: 15px; }
@@ -404,12 +460,12 @@ form {
         text-decoration: none;
         border: 1px solid black;
         width: 180px;
-        height: 45px;
+        height: 25.7142857143px;
         font-family: Roboto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
         color: black; }
 
@@ -450,6 +506,35 @@ form {
   position: absolute;
   left: 0;
   top: 15px; }
+  .content__promocod form {
+    display: flex;
+    flex-direction: row; }
+  .content__promocod input {
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+    background: white;
+    text-shadow: none;
+    box-shadow: none;
+    border-style: none;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; }
+  .content__promocod .style-btn {
+    display: block;
+    background: black;
+    height: 30px;
+    width: 60px;
+    border-style: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    color: white; }
 
 @media screen and (min-width: 801px) and (max-width: 1240px) {
   .main .left-categories {
@@ -476,6 +561,12 @@ form {
       text-transform: lowercase; } }
 @media screen and (min-width: 501px) and (max-width: 800px) {
   .content__promocod {
+    display: none; }
+
+  .header .header__logo {
+    margin-right: 0; }
+
+  .finderAndBascet form {
     display: none; }
 
   .header .slide-win > img {
@@ -574,6 +665,12 @@ form {
   .header a {
     font-size: 25px; }
 
+  .header .header__logo {
+    margin-right: 0; }
+
+  .finderAndBascet form {
+    display: none; }
+
   .product_info .content__p {
     flex-direction: column;
     justify-content: center; }
@@ -634,9 +731,9 @@ form {
         width: 350px !important;
         font-family: Roboto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
         color: white; }
     .content__total .back {
@@ -645,9 +742,9 @@ form {
         width: 350px !important;
         font-family: Roboto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
         color: black; }
 
@@ -664,6 +761,12 @@ form {
   .content__promocod {
     display: none; }
 
+  .header .header__logo {
+    margin-right: 0; }
+
+  .finderAndBascet form {
+    display: none; }
+
   .product_info > img {
     height: 140px;
     margin-bottom: 20px; }
@@ -672,8 +775,8 @@ form {
     flex-direction: column;
     justify-content: center; }
     .product_info .content__p p {
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 11px;
+      line-height: 13px;
       width: 150px; }
 
   .left-categories {
@@ -697,53 +800,55 @@ form {
     padding-left: 5%;
     margin-right: 0; }
 
-  .content__total {
+  .content .content__total {
     align-items: center !important; }
-    .content__total p {
+    .content .content__total p {
       font-family: Roboto;
       font-style: normal;
-      font-size: 18px;
+      font-size: 12px;
       font-weight: 500;
-      line-height: 21px;
+      line-height: 14px;
       text-align: center;
       color: #000000; }
-    .content__total .content__sum {
+    .content .content__total .content__sum {
       width: 100% !important; }
-    .content__total .content__discount {
+    .content .content__total .content__discount {
       width: 100% !important; }
-    .content__total .content__finish {
+    .content .content__total .content__finish {
       width: 100% !important;
       margin-bottom: 20px; }
-      .content__total .content__finish p {
+      .content .content__total .content__finish p {
         font-family: Roboto;
         font-style: normal;
-        font-size: 24px;
+        font-size: 14px;
         font-weight: 500;
-        line-height: 28px;
+        line-height: 16px;
         text-align: center;
         color: #000000; }
-    .content__total .order {
+    .content .content__total .order {
       justify-content: center !important; }
-      .content__total .order a {
+      .content .content__total .order a {
         width: 350px !important;
         font-family: Roboto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
-        color: white; }
-    .content__total .back {
+        color: white;
+        letter-spacing: 1px; }
+    .content .content__total .back {
       justify-content: center !important; }
-      .content__total .back div {
+      .content .content__total .back div {
         width: 350px !important;
         font-family: Roboto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
-        color: black; }
+        color: black;
+        letter-spacing: 1px; }
 
   .fixed div a {
     margin-bottom: 27px;
@@ -761,6 +866,12 @@ form {
   .product_info > img {
     height: 140px;
     margin-bottom: 20px; }
+
+  .header .header__logo {
+    margin-right: 0; }
+
+  .finderAndBascet form {
+    display: none; }
 
   .product_info .content__p {
     flex-direction: column;

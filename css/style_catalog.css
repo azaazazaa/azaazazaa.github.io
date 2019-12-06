@@ -1,4 +1,23 @@
 @charset "UTF-8";
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
 @font-face {
   font-family: Roboto;
   /* Гарнитура шрифта */
@@ -47,12 +66,31 @@
   height: 30px;
   width: 30px;
   box-sizing: border-box;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 20px; }
 
 .header__logo {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.finderAndBascet {
+  display: flex; }
+  .finderAndBascet form {
+    flex-direction: row;
+    display: none; }
+  .finderAndBascet form > input {
+    display: flex;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px;
+    height: 30px;
+    text-decoration: none; }
+  .finderAndBascet form .style-btn {
+    background-image: url(../image/finder.png);
+    height: 30px;
+    width: 30px;
+    border: none; }
 
 .slide-win img {
   width: 30px;
@@ -77,9 +115,9 @@
   .fixed div a {
     font-family: Roboto;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: auto;
-    line-height: 19px;
+    line-height: 21px;
     text-align: center;
     color: #000000;
     text-decoration: none;
@@ -310,7 +348,7 @@ article > h1 {
   font-family: Robotolight;
   font-size: 18px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 21px;
   font-style: normal;
   text-transform: uppercase;
   text-align: center;
@@ -339,8 +377,10 @@ article > h1 {
     line-height: 13px;
     text-align: center;
     color: #000000;
+    font-family: Robotolight;
     text-transform: uppercase;
-    text-align: left; }
+    text-align: left;
+    padding-top: 3px; }
 
 @media screen and (min-width: 1025px) and (max-width: 4000px) {
   .slide-win > img {
