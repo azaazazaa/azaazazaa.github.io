@@ -53,10 +53,53 @@
                         <label>Имя и фамилия<input type="text" name="name" id="secondName"></label>
                         <label>Телефон<input type="text" name="tel" id="telephon"></label>
                         <label>E-mail<input type="text" name="E-mail" id="E-mail"></label>
-                        <label>Страна<input type="text" name="country" id="country"></label>
-                        <label>Город<input type="text" name="city" id="city"></label>
+                        <label>Страна<input type="text" name="country" list="country"></label>
+                        <datalist id="country">
+                            <option value="Россия">
+                            <option value="Другая страна">
+                        </datalist>
+                        <label>Город<input type="text" name="city" list="city"></label>
+                        <datalist id="city">
+                            <option value="Москва">
+                            <option value="Санкт-Петербург">
+                            <option value="Новосибирск">
+                            <option value="Екатеринбург">
+                            <option value="Нижний Новгород">
+                            <option value="Казань">
+                            <option value="Челябинск">
+                            <option value="Омск">
+                            <option value="Самара">
+                            <option value="Ростов-на-Дону">
+                            <option value="Уфа">
+                            <option value="Красноярск">
+                            <option value="Воронеж">
+                            <option value="Пермь">
+                            <option value="Волгоград">
+                            <option value="Краснодар">
+                            <option value="Саратов">
+                            <option value="Тюмень">
+                            <option value="Тольятти">
+                            <option value="Ижевск">
+                            <option value="Барнаул">
+                            <option value="Ульяновск">
+                            <option value="Иркутск">
+                            <option value="Хабаровск">
+                            <option value="Ярославль">
+                            <option value="Владивосток">
+                        </datalist>
                         <label>Комментарий к заказу<input class="comment" type="text" name="comment" id="comment"></label>
+                        <p><strong>Выберите способ доставки</strong></p>
+                        <div>
+                        <p><input name="delivery_method" type="radio" value="pochta" class="radio" checked>Почта России<span>300 Р</span></p>
+                        <label class="order_text">Индекс<input type="text" name="index" id="index"></label>
+                        <label class="order_text">Улица, дом, корпус, квартира<input type="text" name="adress" id="adress"></label>
+                        <p><input name="delivery_method" type="radio" value="SDAK" class="radio">СДЭК Россия - До пункта выдачи<span>250 Р</span></p>
+                        <label class="order_text not_margin">Адрес пункта выдачи заказов<input type="text" name="SDAK_adress" id="SDAK_adress"></label>
+                        <button class="show_on_the_map">Выбрать на карте</button>
+                        <p class="not_margin"><input name="delivery_method" type="radio" value="Pickup" class="radio">Самовывоз</p>
+                        <p class="small">(Доступен только для жителей Санкт-Петербурга)</p>
                         <input class="style-btn1" type="submit" value="ПОДТВЕРДИТЬ ЗАКАЗ">
+                        </div>
                     </form>
                 </section>
                 <section class="my_choise">
