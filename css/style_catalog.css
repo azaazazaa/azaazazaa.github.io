@@ -62,12 +62,16 @@
     display: block;
     margin-left: 20px; }
 
+.basket {
+  z-index: 99; }
+
 .basket > img {
   height: 30px;
   width: 30px;
   box-sizing: border-box;
   margin-right: 20px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  z-index: 99; }
 
 .header__logo {
   display: flex;
