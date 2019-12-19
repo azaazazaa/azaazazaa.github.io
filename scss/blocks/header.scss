@@ -24,12 +24,16 @@
             margin-left: 20px;
         }
     }
+    .basket{
+        z-index: 99;
+    }
     .basket > img{
         height: $blockHeightHeader - 10px;
         width: $blockWidthHeader - 10px;
         box-sizing: border-box;
         margin-right: 20px;
         margin-left: 20px;
+        z-index: 99;
     }
      .header__logo{
         display: flex;

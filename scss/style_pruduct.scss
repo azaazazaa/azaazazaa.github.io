@@ -421,7 +421,7 @@ $sqareSize:20px;
     }
 }
 
-@media screen and (min-width:501px) and (max-width:800px){
+@media screen and (min-width:501px) and (max-width:880px){
     $firstSliderSize: 480px;
     $sqareSize: 50px;
     .fixed div{
@@ -436,7 +436,7 @@ $sqareSize:20px;
         }
     }
     .product{
-        width: $firstSliderSize;
+        max-width: $firstSliderSize;
         .somthLikeThis{
                 width: 100%;
                 p{
@@ -514,7 +514,7 @@ $sqareSize:20px;
 
 
 
-@media screen and (min-width:801px) and (max-width:1024px){
+@media screen and (min-width:881px) and (max-width:1024px){
     .X{display: none}
     $space-between-products: 50px;
 $size-products: 200px;
@@ -613,7 +613,7 @@ $sizeButtonFinish: 180px;
             }
         }
         .product{
-            width: $firstSliderSize;
+            max-width: $firstSliderSize;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
