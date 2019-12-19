@@ -414,38 +414,22 @@ $sizeButtonFinish: 180px;
         margin: 0;
     }
 //******************************************
-.header .slide-win >img{
+.slide-win >img{
             display: none;
         }
 .header {
-    a{
-        font-size: 36px;
-    }
-}
-.left-categories{
-        position: fixed;
-        left: 0;
-        width: $leftCategoryBlock;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: white;
-        border-right: 1px darkgrey solid;
-    }
-    .fixed div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        a{
-            @include font(20px,auto,19px);
-            text-decoration: none;
-            /* identical to box height */
-            margin-bottom: $hight-left-catigory + 10px;
-            margin-top: $hight-left-catigory + 10px;
+            a{
+            font-size: 36px;
         }
     }
+    
+.main123{
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: flex-end;
+    }
+
 .main .show{
         display: block;
         position: fixed;
@@ -644,73 +628,253 @@ my_choise{
 }
 //******************************************
 @media screen and (min-width:1375px) and (max-width: 4500px){
-    $leftCategoryBlock: 225px;
-     .main .left-categories{
-        width: $leftCategoryBlock;
-        div a{
-            font-size: 15px;
-            line-height: 18px;
+    $leftCategoryBlock: 275px;
+     .feedback__form{
+        width: 360px;
+        height: 260px;
+        left: 50%;
+        margin-left: -12.5%;
+    }
+    body .finderAndBascet form{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    article > h1{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .header{
+        margin-bottom: 20px;
+        height: 100px;
+        border-bottom: none;
+        position: relative;
+        a{
+            font-size: 30px;
+            line-height: 35px;
         }
     }
-    .header .header__logo{
-        margin-right: -210px;
+    .header__logo{
+        position: absolute;
+        left: 10px;
+        img{
+            margin-right: 10px;
+        }
     }
-.finderAndBascet{
-    form{
+    .finderAndBascet{
+        form{
+            position: absolute;
+            left: $leftCategoryBlock + 50px;
+        }
+    }
+    .finderAndBascet{
+        form{
         display: flex;
+        justify-content: flex-start;
+        }
     }
-}
+    
+    .left-categories{
+        position: fixed!important;
+        left: 0;
+        top: 15px;
+        width: $leftCategoryBlock;
+        height: 70%;
+        padding-top: 100px;
+        z-index: -1;
+        display: flex!important;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        border-right: 1px darkgrey solid;
+    }
+    .fixed div{
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a{
+            @include font(20px,auto,23px);
+            text-decoration: none;
+            /* identical to box height */
+            margin-bottom: $hight-left-catigory + 10px;
+            margin-top: $hight-left-catigory + 10px;
+        }
+    }
+    
+    .slide-win >img{
+            display: none !important;
+        }
     article{
         width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 35%;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width: 1374px){
-    $leftCategoryBlock: 225px;
-     .main .left-categories{
-        width: $leftCategoryBlock;
-        div a{
-            font-size: 15px;
-            line-height: 18px;
-        }
-    }
-    .header .header__logo{
-        margin-right: -210px;
-    }
-.finderAndBascet{
-    form{
-        display: flex;
-    }
-}
+    $leftCategoryBlock: 275px;
     article{
         width: 500px;
-        
+        margin-left: 35%;
     }
+article > h1{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .header{
+        margin-bottom: 20px;
+        height: 100px;
+        border-bottom: none;
+        position: relative;
+        a{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+    .header__logo{
+        position: absolute;
+        left: 10px;
+        img{
+            margin-right: 10px;
+        }
+    }
+    .finderAndBascet{
+        form{
+            position: absolute;
+            left: $leftCategoryBlock + 50px;
+        }
+    }
+    .finderAndBascet{
+        form{
+        display: flex;
+        justify-content: flex-start;
+        }
+    }
+    .slide-win >img{
+            display: none !important;
+        }
+    .left-categories{
+        position: fixed!important;
+        left: 0;
+        top: 15px;
+        width: $leftCategoryBlock;
+        height: 70%;
+        padding-top: 100px;
+        z-index: -1;
+        display: flex!important;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        border-right: 1px darkgrey solid;
+    }
+    .fixed div{
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a{
+            @include font(20px,auto,23px);
+            text-decoration: none;
+            /* identical to box height */
+            margin-bottom: $hight-left-catigory + 10px;
+            margin-top: $hight-left-catigory + 10px;
+        }
+    }
+    .merch .name_prod{
+        @include font(14px,normal,16px);
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .feedback__form{
+        width: 360px;
+        height: 260px;
+        left: 50%;
+        margin-left: -12.5%;
+    }
+    
 }
 
 @media screen and (min-width:801px) and (max-width: 1024px){
-    $leftCategoryBlock: 225px;
-     .main .left-categories{
-        width: $leftCategoryBlock;
-        div a{
-            font-size: 15px;
-            line-height: 18px;
+     $leftCategoryBlock: 275px;
+    article{
+        width: 400px;
+        margin-left: 35%;
+    }
+article > h1{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .header{
+        margin-bottom: 20px;
+        height: 100px;
+        border-bottom: none;
+        position: relative;
+        a{
+            font-size: 30px;
+            line-height: 35px;
         }
     }
-    .header .header__logo{
-        margin-right: -210px;
+    .header__logo{
+        position: absolute;
+        left: 10px;
+        img{
+            margin-right: 10px;
+        }
     }
-.finderAndBascet{
-    form{
+    .finderAndBascet{
+        form{
+            position: absolute;
+            left: $leftCategoryBlock + 50px;
+        }
+    }
+    .finderAndBascet{
+        form{
         display: flex;
+        justify-content: flex-start;
+        }
     }
-}
-    article{
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+    .slide-win >img{
+            display: none !important;
+        }
+    .left-categories{
+        position: fixed!important;
+        left: 0;
+        top: 15px;
+        width: $leftCategoryBlock;
+        height: 70%;
+        padding-top: 100px;
+        z-index: -1;
+        display: flex!important;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        border-right: 1px darkgrey solid;
+    }
+    .fixed div{
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a{
+            @include font(20px,auto,23px);
+            text-decoration: none;
+            /* identical to box height */
+            margin-bottom: $hight-left-catigory + 10px;
+            margin-top: $hight-left-catigory + 10px;
+        }
+    }
+    .merch .name_prod{
+        @include font(14px,normal,16px);
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .feedback__form{
+        width: 360px;
+        height: 260px;
+        left: 50%;
+        margin-left: -12.5%;
     }
 }
 
@@ -718,9 +882,45 @@ my_choise{
     $leftCategoryBlock: 225px;
     $firstSliderSize: 480px;
     $sizeButtonFinish: 450px;
+    .main .show{
+        display: block;
+        position: fixed;
+        top: 61px;
+        height: 100%;
+    }
+    .slide-win >img{
+            display: block;
+        }
+    .left-categories{
+        width: 100%;
+        display: none;
+        height: 300%;
+    }
+    .content__promocod{
+    display: none;
+    }
+    .header .header__logo{
+        margin-right: 0;
+    }
+    .finderAndBascet{
+        form{
+            display: none;
+        }
+    }
     .header .slide-win >img{
             display: block;
         }
+    .header__logo{
+        position: static;
+        img{
+            margin-right: 10px;
+        }
+    }
+    
+    .product_info > img{
+        height: $heightBascetProductMOBILE;
+        margin-bottom: 20px;
+    }
     .left-categories{
         position: absolute;
         left: 0;
