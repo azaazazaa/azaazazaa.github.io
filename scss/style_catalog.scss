@@ -200,7 +200,7 @@ article > h1{
         align-items: center;
         justify-content: center;
         a{
-            @include font(20px,auto,23px);
+            @include font(18px,auto,23px);
             text-decoration: none;
             /* identical to box height */
             margin-bottom: $hight-left-catigory + 10px;
@@ -275,7 +275,7 @@ article > h1{
         align-items: center;
         justify-content: center;
         a{
-            @include font(20px,auto,23px);
+            @include font(18px,auto,23px);
             text-decoration: none;
             /* identical to box height */
             margin-bottom: $hight-left-catigory + 10px;

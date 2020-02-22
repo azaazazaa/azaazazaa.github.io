@@ -183,7 +183,6 @@ form {
 
 .bottom {
   min-height: 100%;
-  background: white;
   margin-bottom: 20px; }
 
 .bottom__container {
@@ -289,7 +288,7 @@ form {
   justify-content: center;
   text-align: center;
   background-color: white;
-  z-index: 3; }
+  z-index: 98; }
 
 .fixed div {
   display: flex;
@@ -307,7 +306,8 @@ form {
     text-transform: uppercase;
     /* identical to box height */
     margin-bottom: 27px;
-    margin-top: 27px; }
+    margin-top: 27px;
+    z-index: 99; }
 
 .show1 {
   z-index: 6 !important;
@@ -627,7 +627,7 @@ main {
     font-size: 36px; }
 
   .product {
-    max-width: 480px; }
+    width: 500px; }
     .product .somthLikeThis {
       width: 100%; }
       .product .somthLikeThis p {
@@ -641,13 +641,14 @@ main {
         margin-bottom: 10px;
         font-family: Robotobold; }
     .product .somthLikeThis__overflow .somthLikeThis__container img {
-      height: 240px; }
+      width: 166.6666666667px;
+      height: 250px; }
 
   .bottom__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 480px !important; }
+    min-width: 500px !important; }
 
   .product__description-text ul li {
     font-size: 20px !important;
@@ -919,7 +920,7 @@ main {
     .fixed div a {
       font-family: Roboto;
       font-style: normal;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: auto;
       line-height: 23px;
       text-align: center;
@@ -1175,7 +1176,7 @@ main {
     .fixed div a {
       font-family: Roboto;
       font-style: normal;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: auto;
       line-height: 23px;
       text-align: center;

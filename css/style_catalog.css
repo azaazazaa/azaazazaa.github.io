@@ -111,7 +111,7 @@
   justify-content: center;
   text-align: center;
   background-color: white;
-  z-index: 3; }
+  z-index: 98; }
 
 .fixed div {
   display: flex;
@@ -129,7 +129,8 @@
     text-transform: uppercase;
     /* identical to box height */
     margin-bottom: 27px;
-    margin-top: 27px; }
+    margin-top: 27px;
+    z-index: 99; }
 
 .show1 {
   z-index: 6 !important;
@@ -234,7 +235,6 @@ form {
 
 .bottom {
   min-height: 100%;
-  background: white;
   margin-bottom: 20px; }
 
 .bottom__container {
@@ -459,7 +459,7 @@ article > h1 {
     .fixed div a {
       font-family: Roboto;
       font-style: normal;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: auto;
       line-height: 23px;
       text-align: center;
@@ -525,7 +525,7 @@ article > h1 {
     .fixed div a {
       font-family: Roboto;
       font-style: normal;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: auto;
       line-height: 23px;
       text-align: center;
